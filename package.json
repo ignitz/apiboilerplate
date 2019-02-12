@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Yuri Niitsuma <ignitzhjfk@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "knex": "^0.16.3",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.18.10"
+  },
+  "scripts": {
+    "start": "cross-env NODE_PATH=./src nodemon --exec babel-node src/app.js"
+  }
+}
